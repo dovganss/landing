@@ -1,0 +1,145 @@
+.slider {
+  overflow: hidden;
+  width: rem(1312px);
+  height: rem(535px);
+}
+
+.slider-section {
+  min-height: rem(640px);
+  height: 100%;
+}
+
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: rem(1312px);
+  padding-top: rem(56px);
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: rem(14px);
+  z-index: 10;
+
+  &_left {
+    left: 3%;
+    top: 55%;
+
+    @include phones {
+      top: 120%;
+    }
+  }
+
+  &_right {
+    right: 3%;
+    top: 55%;
+
+    @include phones {
+      top: 120%;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    margin-top: -153px;
+  }
+}
+
+.arrow__img {
+  @include phones {
+    height: rem(24px);
+    width: rem(12px);
+  }
+}
+
+.slider__list {
+  display: flex;
+  left: 0;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 32px;
+  width: rem(1312px);
+  height: rem(535px);
+}
+
+.slider__item {
+  display: none;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: rem(1312px);
+  height: rem(535px);
+  border-radius: 32px;
+
+  @include phones {
+    width: rem(346px);
+    height: rem(535px);
+  }
+
+  &--active {
+    display: flex;
+  }
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.slider__block {
+  border-radius: 32px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./../../img/slide1.png);
+ }
+
+  &--2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./../../img/slide2.png);
+ }
+
+  &--3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./../../img/slide3.png);
+ }
+}
+
+.slider__block-title {
+  font-weight: 800;
+  font-size: 56px;
+  color: #FFFFFF;
+  margin-bottom: rem(16px);
+
+  @include phones {
+    font-size: rem(40px);
+    max-width: rem(225px);
+    text-align: center;
+  }
+}
+
+.slider__block-text {
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  width: rem(580px);
+  text-align: center;
+  line-height: rem(32px);
+
+  @include phones {
+    max-width: rem(254px);
+    font-size: rem(15px);
+    line-height: rem(24px);
+  }
+}
+
+

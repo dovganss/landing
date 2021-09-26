@@ -1,0 +1,30 @@
+//normalize
+@import "./normalize.css";
+
+//media
+
+@import "./media.scss";
+
+$containerWidth: 1312px;
+$baseFontSize: 18px;
+
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+$black: #292929;
+
+//z-indexes
+$z-fixed-menu: 100;
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+@import "./layout.scss";
+
+//components
+
+@import "./components/hero.scss";
+@import "./components/header.scss";
+@import "./components/form.scss";
+@import "./components/slider.scss";
+

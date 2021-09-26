@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="maincontent">
+      <section data-section-id="header" class="header-section scroll-to">
+        <header class="header">
+          <div class="logo">
+            <img src="./img/logo-left.png" alt="logo-left" class="logo logo__left">
+            <img src="./img/logo-right.png" alt="logo-right" class="logo logo__right">
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#hero" data-scroll-to="hero" class="menu__link">Jane Doe</a>
+              </li>
+              <li class="menu__item">
+                <a href="#form" data-scroll-to="form" id="scroll" class="menu__link">Tell us about yourself</a>
+              </li>
+              <li class="menu__item">
+                <a href="#slider" data-scroll-to="slider" class="menu__link">Slider</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </section>
+      <section data-section-id="hero" class="hero-section scroll-to">
+        <div class="container hero__container">
+          <a id="hero" name="hero"></a>
+          <div class="hero__section">
+            <div class="hero__photo">
+              <img src="./img/photo.png" alt="photo" class="hero__photo-img">
+            </div>
+            <div class="hero__info">
+              <h1 class="hero__info-title">Jane Doe</h1>
+              <div class="hero__info-questions">
+                <div class="hero__information">
+                  <div class="hero__info-question">Date of birth</div>
+                  <div class="hero__info-answer">21.04.2001</div>
+                </div>
+              <div class="hero__information">
+                <div class="hero__info-question">Gender</div>
+                <div class="hero__info-answer">Female</div>
+              </div>
+              <div class="hero__information">
+                <div class="hero__info-question">Country</div>
+                <div class="hero__info-answer">Corea</div>
+              </div>
+              </div>
+              <h3 class="hero__info-subtitle">About me</h3>
+              <p class="hero__info-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p><p class="hero__info-desc hero__info-desc--2"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-section-id="form" class="section form-section">
+        <div class="container">
+          <a id="form" name="form"></a>
+          <h2 class="form-section__title">Tell us about yourself</h2>
+          <form class="form">
+             <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Your name<span class="form__title--error"></span></div>
+                  <input placeholder="Tell us your name" type="text" class="form__input" name="name">
+                </label>
+               
+                <label class="form__block">
+                  <div class="form__title">Your gender</div>
+                  <input placeholder="Chose your gender" type="text" class="form__input" name="gender">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Your country</div>
+                  <input placeholder="Tell us your country" type="text" class="form__input" name="country">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Your City</div>
+                  <input placeholder="Tell us your City" type="text" class="form__input" name="city">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Your date of birth</div>
+                  <input placeholder="Tell us your date of birth" type="date" class="form__input" name="date">
+                </label>
+              </div>
+              <div class="form__row document">
+                <div class="form__document">
+                  <p class="form__document-text">Proof your identity with some documents
+                  </p>
+                  <div class="form__document-button">
+                    <input class="input_file" type="file">
+                    <label class="button button--theme-white"> 
+                      <div class="button button--theme-white">Add document</div></label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__button">
+                <input type="submit" value="Send info" class="button">
+              </div>
+          </form>
+        </div>
+      </section>
+      <section data-section-id="slider" class="section slider-section">
+        <div class="container slider-container">
+          <a id="slider" name="slider"></a>
+          <a href="" class="arrow arrow_left" id="left">
+            <img src="./img/arrow-left.png" alt="left arrow" class="arrow__img">
+          </a>
+          <div class="slider">
+            <ul class="slider__list">
+              <li class="slider__item slider__item--active">
+                <div class="slider__block slider__block--1">
+                  <h2 class="slider__block-title">
+                    Slide this photo
+                  </h2>
+                  <p class="slider__block-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </li>
+              <li class="slider__item">
+                <div class="slider__block slider__block--2">
+                  <h2 class="slider__block-title">
+                    Slide this photo
+                  </h2>
+                  <p class="slider__block-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </li>
+              <li class="slider__item">
+                <div class="slider__block slider__block--3">
+                  <h2 class="slider__block-title">
+                    Slide this photo
+                  </h2>
+                  <p class="slider__block-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a href="" class="arrow arrow_right" id="right">
+            <img src="./img/arrow-right.png" alt="right arrow" class="arrow__img">
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
